@@ -1,0 +1,36 @@
+table, th, td {
+    border: 1px solid;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 50px;
+}
+
+.first-th{
+    width: 70%;
+}
+
+.element{
+    margin: 100px;
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    padding: 100px;
+}
+
+.elem{
+    border: 1px solid;
+    height: 20px;
+    width: 20px;
+    background-color: red; 
+}
+
+button{
+    padding: 10px 25px;
+    background-color: #12CC84;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
