@@ -1,36 +1,64 @@
-table, th, td {
-    border: 1px solid;
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-table{
-    border-collapse: collapse;
-    border-spacing: 50px;
+header ul{
+    display: flex;
+    list-style: none;
 }
 
-.first-th{
-    width: 70%;
+header ul li{
+    margin-right: 10px;
 }
 
-.element{
-    margin: 100px;
-    border: 1px solid;
-    height: 100px;
-    width: 100px;
-    background-color: white;
-    padding: 100px;
+header ul li:last-child{
+    margin-right: 0;
 }
 
-.elem{
-    border: 1px solid;
-    height: 20px;
-    width: 20px;
-    background-color: red; 
-}
-
-button{
-    padding: 10px 25px;
-    background-color: #12CC84;
-    border-radius: 10px;
+header ul li button{
+    padding: 5px 20px;
     border: none;
-    color: white;
+    background: aquamarine;
+    color: blue;
+    cursor: pointer;
+}
+
+header ul li button:hover{
+    background-color: black;
+}
+
+#boxes{
+    margin-top: 50px;
+}
+
+#boxes .wrapper{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    width: 1200px;
+    padding: 0 24px;
+    /* position: relative; */
+}
+
+#boxes .wrapper .box{
+    height: 50px;
+    width: 150px;
+    background-color: violet;
+    /* position: absolute; */
+}
+
+.box:before{
+    content: 'test content';
+    width: 70px;
+    height: 20px;
+    background-color: black;
+}
+
+.box::after{
+    content: '';
+    width: 70px;
+    height: 20px;
+    background-color: black;
 }
